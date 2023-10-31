@@ -12,6 +12,10 @@ let mbti = ''
  * 10개의 질문을 하나씩 출력해주는 함수
  */
 function renderQuestion(currentNumber) {
+  if(currentNumber === questions.length) { // 9면 종료 - questions에는 10개의 데이터가 들어있다
+    showResultpage(mbti) //마지막 페이지로 이동
+    return //early return 함수종료
+  }
   const question = questions[currentNumber] //data.js의 questions 배열 n번째 요소
   numberEl.innerHTML = question.number // number 엘리먼트에 텍스트 노드 추가
   questionEl.innerHTML = question.question // question 엘리먼트에 텍스트노드 추가
@@ -26,8 +30,12 @@ function renderQuestion(currentNumber) {
 function nextQuestion(choiceNumber) {
   const question = questions[currentNumber]
   mbti = mbti + question.choices[choiceNumber].value // (i/e) + (n/s) + (f/t) + (p/j)
-  currentNumber ++;
+  currentNumber ++
   renderQuestion(currentNumber)
+}
+
+function showResultpage(mbti) {
+  location.href = `./results.html?mbti=${mbti}`
 }
 
 choice1El.addEventListener('click', function() {
