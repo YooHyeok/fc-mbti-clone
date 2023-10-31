@@ -9,6 +9,12 @@
   <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" />
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/questions.css">
+  <script type="module" defer src="./js/questions.js"></script> 
+  <!--
+    type="module" 속성 의미 
+    - questions.js파일에서 data.js라는 다른 파일에 존재하는 객체를 사용 
+    - questions.js파일의 타입이 파일로 구분되는 내용들을 가지고와서 쓰는 module타입 이라는 의미 
+  -->
 </head>
 <body>
   <div class="progress">
@@ -16,10 +22,8 @@
   </div>
   <div class="question-box">
     <div class="number">
-      01
     </div>
     <div class="question">
-      곧 크리스마스! 회사에서 크리스마스 파티 스텝을 모집한다는데?
     </div>
     <div class="btn btn-gray choice choice1"></div>
     <div class="btn btn-gray choice choice2"></div>
