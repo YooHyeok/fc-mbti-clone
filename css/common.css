@@ -1,5 +1,14 @@
 body {
-  font-family: "pretendard Variable", sans-serif; 
+  font-family: "pretendard Variable", sans-serif;
+  /* 한글 띄어쓰기 기준 단어 인식 */
+  word-break: keep-all;
+  /* 상하단 80px만큼의 공간 차지 */
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+img {
+  display: block; /* <img>, <a> : 글자요소인 inline요소 */
 }
 
 /* 내안에 숨어있는 직업캐 찾기! */
