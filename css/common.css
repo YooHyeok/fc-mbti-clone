@@ -44,6 +44,7 @@ body {
   margin-bottom: 35px;
   margin-left: auto; /* 버튼 가운데정렬 */
   margin-right: auto; /* 버튼 가운데정렬 */
+  transition: 0.1s; /* 전환효과: 버튼 눌리는 애니메이션 효과 (요소의 전/후 상태중 전 상태에서 사용해야한다) */
 }
 
 /* 주황버튼 */
@@ -52,16 +53,37 @@ body {
   box-shadow: 0 14px 0 #E66000; /* 그림자: x축거리, y축거리, 흐림정도, 색상 */
   color: #ffffff;
 }
+/* 주황버튼 클릭 효과 */
+.btn-orange:active { /* active:가상 클래스 선택자 - 요소를 클릭하고 있는 동안에만 적용*/
+  box-shadow: 0 4px 0 #E66000; /* 그림자: x축거리, y축거리, 흐림정도, 색상 */
+  transform: translateY(10px); /* y축으로 10px만큼 이동 */
+
+}
+
 /* 초록버튼 */
 .btn-green {
   background-color: #32BFA1;
-  box-shadow: 0 14px 0 #299A82; /* 그림자: x축거리, y축거리, 흐림정도, 색상 */
+  box-shadow: 0 14px 0 #299A82;
   color: #ffffff;
 }
+/* 초록버튼 클릭효과 */
+.btn-green:active { 
+  box-shadow: 0 4px 0 #299A82;
+  transform: translateY(10px);
+}
+
 /* 회색버튼 */
 .btn-gray {
-
+  background-color: #F2F4F6;
+  box-shadow: 0 14px 0 #DFE1E2;
+  color: #444444;
 }
+/* 회색버튼 클릭효과 */
+.btn-green:active { 
+  box-shadow: 0 4px 0 #DFE1E2;
+  transform: translateY(10px);
+}
+
 /* 작은버튼 */
 .btn-small {
   max-width: 350px;
