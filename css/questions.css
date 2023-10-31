@@ -1,0 +1,22 @@
+body {
+  background-image: url("../images//questions_bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.progress {
+  max-width: 500px;
+  height: 20px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.progress .value { /* progress div의 자식 value class를 지칭 */
+  width: 10%; /* progress 너비 500px 기준으로 10%인 50px */
+  height: 20px;
+  background-color: #FFB103;
+  border-radius: 10px;
+  transition: 0.2s;
+}
