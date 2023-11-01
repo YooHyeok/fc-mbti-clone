@@ -37,3 +37,39 @@ body {
   padding-right: 10px;
 }
 
+.result h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.result .jobs {
+  height: 200px;
+  display: flex; /* 자식요소인 job 수평정렬 */
+  gap: 10px; /* display flex를 통해 수평정렬되는 자식요소들 사이사이에 공간을 만들어준다. */
+}
+
+.result .job {
+  flex: 1; /* 가로너비의 비율 1:1 비율 */
+  background-color: #FFFFFF;
+  background-image: url("../images/result_star.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFE603;
+  border-radius: 20px;
+}
+
+.result .lecture img {
+  margin-bottom: 40px;
+  width:100%;
+}
