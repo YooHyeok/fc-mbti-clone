@@ -67,6 +67,8 @@ body {
   align-items: center;
   border: 1px solid #FFE603;
   border-radius: 20px;
+  /* margin-bottom: 40px; */
+  /* lecture 주석 */
 }
 
 .result .lecture img {
