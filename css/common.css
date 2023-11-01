@@ -88,7 +88,7 @@ img {
   color: #444444;
 }
 /* 회색버튼 클릭효과 */
-.btn-green:active { 
+.btn-gray:active { 
   box-shadow: 0 4px 0 #DFE1E2;
   transform: translateY(10px);
 }
