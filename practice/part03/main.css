@@ -1,3 +1,7 @@
 h1 {
   color: red;
+  /* 개발자도구에서 복사한 css 추가 */
+  font-size: 50px;
+  font-weight: 900;
+  border: 4px solid;
 }
